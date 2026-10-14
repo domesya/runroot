@@ -39,6 +39,10 @@ fn parse_arguments(prog_name string) {
             help(prog_name)
             exit(0)
         }
+		'--check' {
+			check()
+			exit(0)
+		}
 		'--' {
 			if args.len == 1 {
 				eprintln('error: `--` given but no command')
