@@ -25,7 +25,7 @@ fn prepare_rootcmd() RootCmd {
 		return RootCmd{ path: '', is_run0: false, extra: [] }
 	}
 
-	for prog in ['run0', 'pkexec', 'lxqt-sudo', 'doas', 'sudo'] {
+	for prog in escalators {
         path := os.find_abs_path_of_executable(prog) or { continue }
         if prog == 'run0' {
             mut extra := []string{}
