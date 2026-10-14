@@ -3,7 +3,7 @@ module main
 import os
 
 const def_color = '48;2;64;0;0'
-const reset_color = '\x1b[0m]'
+const reset_color = '\x1b[0m'
 
 fn help(prog_name string) {
 	println(r"
