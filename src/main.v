@@ -57,11 +57,6 @@ fn parse_arguments(prog_name string) {
 	}
 }
 
-fn run_command(cmd []string) {
-	prepare_rootcmd()
-	println('would run: ${cmd.join(' ')}')
-}
-
 fn ensure_env(name string, default_val string) {
     if _ := os.getenv_opt(name) {
         return // present, even if '' -> leave alone
