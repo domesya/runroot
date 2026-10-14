@@ -58,7 +58,8 @@ fn parse_arguments(prog_name string) {
 }
 
 fn run_command(cmd []string) {
-	 println('would run: ${cmd.join(' ')}')
+	prepare_rootcmd()
+	println('would run: ${cmd.join(' ')}')
 }
 
 fn ensure_env(name string, default_val string) {
